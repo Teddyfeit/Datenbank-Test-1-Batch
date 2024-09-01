@@ -39,6 +39,6 @@ echo %newtext%
 set /p categorie2="%categorie%: "
 
 :finish
-echo %email%;****;number;%categorie%>> %dbfile%
+echo %email%;****;number;%categorie%>> Datenbank-Test-1-Batch/%dbfile%
 cls
 echo Datensatz hinzugefügt!
