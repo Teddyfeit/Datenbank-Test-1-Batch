@@ -11,12 +11,13 @@ echo 1. Neuer Datensätze.
 echo 2. Nach Datensätzen Suchen.
 echo 3. Dätensätze Anschauen
 set /p choice="Was Wahlen Sie: "
-pause
 
 if %choice%==3 goto lookdata
 if %choice%==2 goto searchdata
 if %choice%==1 goto newdata
 if %choice%==666 goto sixsixsix
+pause
+exit
 
 :newdata
 echo Wollen sie wirklich einen neuen datensatz machen?
@@ -33,12 +34,12 @@ exit
 goto :menu
 
 :searchdata
-start "datas/searchdata.bat" ""
+start "searchdata.bat" ""
 exit
 
 :lookdata
-start "datas/lokkatdata.bat" ""
+start "lokkatdata.bat" ""
 exit
 
-:sixsixsix
-msg 666
+exit
+pause
