@@ -42,3 +42,5 @@ set /p categorie2="%categorie%: "
 echo %email%;****;number;%categorie%>> Datenbank-Test-1-Batch/%dbfile%
 cls
 echo Datensatz hinzugefügt!
+pause
+exit
