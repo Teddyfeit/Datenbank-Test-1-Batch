@@ -11,6 +11,7 @@ echo 1. Neuer Datensätze.
 echo 2. Nach Datensätzen Suchen.
 echo 3. Dätensätze Anschauen
 set /p choice="Was Wahlen Sie: "
+pause
 
 if %choice%==3 goto lookdata
 if %choice%==2 goto searchdata
